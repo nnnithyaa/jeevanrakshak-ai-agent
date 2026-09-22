@@ -27,7 +27,7 @@ function daysFromNow(days: number): string {
 }
 
 export const inventoryData: BloodInventoryRow[] = [
-  { id: '1', centre: 'Centre A', centreId: 'A', bloodGroup: 'O+', component: 'Packed RBC', currentStock: 42, dailyConsumption: 8, expiryDate: daysFromNow(28), status: 'Adequate' },
+  { id: '1', centre: 'Centre A', centreId: 'A', bloodGroup: 'O+', component: 'Packed RBC', currentStock: 30, dailyConsumption: 8, expiryDate: daysFromNow(28), status: 'Adequate' },
   { id: '2', centre: 'Centre A', centreId: 'A', bloodGroup: 'O-', component: 'Packed RBC', currentStock: 6, dailyConsumption: 3, expiryDate: daysFromNow(20), status: 'Critical' },
   { id: '3', centre: 'Centre A', centreId: 'A', bloodGroup: 'A+', component: 'Platelets', currentStock: 18, dailyConsumption: 5, expiryDate: daysFromNow(3), status: 'Near Expiry' },
   { id: '4', centre: 'Centre B', centreId: 'B', bloodGroup: 'O+', component: 'Platelets', currentStock: 14, dailyConsumption: 6, expiryDate: daysFromNow(4), status: 'Near Expiry' },
@@ -41,7 +41,7 @@ export const inventoryData: BloodInventoryRow[] = [
   { id: '12', centre: 'Centre D', centreId: 'D', bloodGroup: 'AB-', component: 'Fresh Frozen Plasma', currentStock: 8, dailyConsumption: 1, expiryDate: daysFromNow(38), status: 'Adequate' },
   { id: '13', centre: 'Centre A', centreId: 'A', bloodGroup: 'B+', component: 'Platelets', currentStock: 16, dailyConsumption: 4, expiryDate: daysFromNow(6), status: 'Near Expiry' },
   { id: '14', centre: 'Centre B', centreId: 'B', bloodGroup: 'A+', component: 'Packed RBC', currentStock: 12, dailyConsumption: 7, expiryDate: daysFromNow(18), status: 'Low' },
-  { id: '15', centre: 'Centre C', centreId: 'C', bloodGroup: 'O+', component: 'Packed RBC', currentStock: 48, dailyConsumption: 9, expiryDate: daysFromNow(26), status: 'Adequate' },
+  { id: '15', centre: 'Centre C', centreId: 'C', bloodGroup: 'O+', component: 'Packed RBC', currentStock: 60, dailyConsumption: 9, expiryDate: daysFromNow(26), status: 'Adequate' },
   { id: '16', centre: 'Centre D', centreId: 'D', bloodGroup: 'A-', component: 'Packed RBC', currentStock: 4, dailyConsumption: 2, expiryDate: daysFromNow(15), status: 'Critical' },
   { id: '17', centre: 'Centre A', centreId: 'A', bloodGroup: 'AB+', component: 'Fresh Frozen Plasma', currentStock: 20, dailyConsumption: 3, expiryDate: daysFromNow(42), status: 'Adequate' },
   { id: '18', centre: 'Centre B', centreId: 'B', bloodGroup: 'O-', component: 'Fresh Frozen Plasma', currentStock: 10, dailyConsumption: 2, expiryDate: daysFromNow(33), status: 'Low' },
