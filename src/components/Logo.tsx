@@ -12,9 +12,9 @@ export function Logo({ size = 'md' }: { size?: 'sm' | 'md' | 'lg' }) {
         <Droplet size={iconDims[size]} className="text-white" fill="white" />
       </div>
       <div>
-        <div className={`font-bold leading-tight text-navy-900 ${textSize[size]}`}>
-          Jeevan<span className="text-brand-700">Rakshak</span>
-        </div>
+        <div className={`font-bold leading-tight text-white ${textSize[size]}`}>
+  Jeevan<span className="text-brand-500">Rakshak</span>
+</div>
         <div className={`font-medium leading-tight text-navy-400 ${subSize[size]}`}>
           Predict. Coordinate. Save.
         </div>

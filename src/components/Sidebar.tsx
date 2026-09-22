@@ -30,9 +30,9 @@ const navItems: { id: PageId; label: string; icon: typeof LayoutDashboard }[] = 
 
 export function Sidebar({ activePage, onNavigate, onLogout }: SidebarProps) {
   return (
-    <aside className="flex h-screen w-64 flex-col bg-navy-900 text-white">
+    <aside className="flex h-screen w-72 flex-col bg-navy-900 text-white">
       <div className="flex items-center px-5 py-5">
-        <div className="scale-90 origin-left">
+        <div className="origin-left">
           <Logo size="md" />
         </div>
       </div>
@@ -43,13 +43,19 @@ export function Sidebar({ activePage, onNavigate, onLogout }: SidebarProps) {
         {navItems.map((item) => {
           const Icon = item.icon;
           const active = activePage === item.id;
+
           return (
             <button
               key={item.id}
               onClick={() => onNavigate(item.id)}
-              className={`sidebar-link w-full ${active ? 'sidebar-link-active' : ''}`}
+              className={`sidebar-link w-full ${
+                active ? 'sidebar-link-active' : ''
+              }`}
             >
-              <Icon size={18} className={active ? 'text-white' : 'text-navy-400'} />
+              <Icon
+                size={18}
+                className={active ? 'text-white' : 'text-navy-400'}
+              />
               {item.label}
             </button>
           );
@@ -63,14 +69,23 @@ export function Sidebar({ activePage, onNavigate, onLogout }: SidebarProps) {
           <div className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-700 text-sm font-semibold text-white">
             AD
           </div>
+
           <div className="flex-1 min-w-0">
-            <div className="truncate text-sm font-medium text-white">Admin</div>
+            <div className="truncate text-sm font-medium text-white">
+              Admin
+            </div>
+
             <div className="flex items-center gap-1.5 text-xs text-navy-400">
-              <CircleDot size={10} className="text-green-400" fill="currentColor" />
+              <CircleDot
+                size={10}
+                className="text-green-400"
+                fill="currentColor"
+              />
               Online
             </div>
           </div>
         </div>
+
         <button
           onClick={onLogout}
           className="sidebar-link mt-2 w-full"
