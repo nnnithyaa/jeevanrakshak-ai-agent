@@ -33,7 +33,7 @@ export function Sidebar({ activePage, onNavigate, onLogout }: SidebarProps) {
     <aside className="flex h-screen w-72 flex-col bg-navy-900 text-white">
       <div className="flex items-center px-5 py-5">
         <div className="origin-left">
-          <Logo size="md" />
+          <Logo size="md" variant="light" />
         </div>
       </div>
 
